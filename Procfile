@@ -1,0 +1,1 @@
+web: gunicorn minhascontas.wsgi --log-file -
