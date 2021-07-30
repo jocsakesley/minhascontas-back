@@ -12,7 +12,7 @@ class Bill(models.Model):
     type_bill = models.CharField(max_length=1, choices=TYPES)
     value = models.FloatField()
     date = models.DateField(default=timezone.now)
-    is_recourrent = models.BooleanField(default=False)
+    is_recurrent = models.BooleanField(default=False)
     user = models.ForeignKey(User, on_delete=models.CASCADE)
 
     def __str__(self):
